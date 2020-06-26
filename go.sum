@@ -1,0 +1,9 @@
+github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
+github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5PlCu98SY8svDHJxuZscDgtXS6KTTbou5AhLI=
+github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1/go.mod h1:Q3SI9o4m/ZMnBNeIyt5eFwwo7qiLfzFZmjNmxjkiQlU=
+github.com/hooklift/assert v0.0.0-20170704181755-9d1defd6d214 h1:WgfvpuKg42WVLkxNwzfFraXkTXPK36bMqXvMFN67clI=
+github.com/hooklift/assert v0.0.0-20170704181755-9d1defd6d214/go.mod h1:kj6hFWqfwSjFjLnYW5PK1DoxZ4O0uapwHRmd9jhln4E=
+go.starlark.net v0.0.0-20200619143648-50ca820fafb9 h1:GXxsgecRXvpdwo8UtXZyEzJww54A+54NaO+86/pBr+c=
+go.starlark.net v0.0.0-20200619143648-50ca820fafb9/go.mod h1:7MJ5a3UGvhYDcmDibLTlO6EEOVwPCNVCsthcNTmVbYE=
+golang.org/x/sys v0.0.0-20191002063906-3421d5a6bb1c h1:Vco5b+cuG5NNfORVxZy6bYZQ7rsigisU1WQFkvQ0L5E=
+golang.org/x/sys v0.0.0-20191002063906-3421d5a6bb1c/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
