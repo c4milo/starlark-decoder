@@ -4,5 +4,6 @@ go 1.14
 
 require (
 	github.com/hooklift/assert v0.0.0-20170704181755-9d1defd6d214
+	github.com/mitchellh/mapstructure v1.3.2
 	go.starlark.net v0.0.0-20200619143648-50ca820fafb9
 )
