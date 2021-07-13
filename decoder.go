@@ -42,18 +42,20 @@ func DecodeKWargs(kwargs []starlark.Tuple, g interface{}) error {
 }
 
 // Decode recursively decodes the starlark value v into an equivalent shaped Go value g, made up
-// of only primitive types.
+// of only primitive types. There is one exception, Starlark functions or lambda expressions will be returned back unchanged
+// to its Go equivalent: *starlark.Function
 //
 // The following are the conversions made from Starlark types to Go types:
 //
-//	None   → nil
-//	Bool   → bool
-//	Int    → int
-//	Float  → float64
-//	String → string
-//	List   → []interface{}
-//	Tuple  → []interface{}
-//	Dict   → map[interface{}]interface{}{}
+//	None     → nil
+//	Bool     → bool
+//	Int      → int
+//	Float    → float64
+//	String   → string
+//	List     → []interface{}
+//	Tuple    → []interface{}
+//	Dict     → map[interface{}]interface{}{}
+//	Function → *starlark.Function
 //
 func Decode(v starlark.Value) (g interface{}, err error) {
 	switch x := v.(type) {
@@ -110,6 +112,10 @@ func Decode(v starlark.Value) (g interface{}, err error) {
 			}
 			g = hmap
 		}
+	// function or lambda expression
+	case *starlark.Function:
+		// passthrough for users to call
+		g = x
 	default:
 		err = errUnsupportedType
 	}

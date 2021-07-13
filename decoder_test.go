@@ -60,6 +60,7 @@ func TestDecodeKWargs(t *testing.T) {
 		starlark.String("horse riding"),
 		starlark.String("car racing"),
 	}))
+	dict.SetKey(starlark.String("myfn"), &starlark.Function{})
 
 	tests := []struct {
 		x  []starlark.Tuple
